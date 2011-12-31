@@ -11,6 +11,7 @@ public class AppMenuBar extends JMenuBar implements ActionListener{
     private Application instance;
     private JFrame owner;
     private final WorldWindow wwd;
+    ZoomFrame zoomFrame;
 
     public AppMenuBar(JFrame owner, WorldWindow wwd, Application instance) {
         super();
@@ -53,7 +54,8 @@ public class AppMenuBar extends JMenuBar implements ActionListener{
         }
         
         if (src.equals("Go to location")) {
-           ZoomFrame zoomFrame = new ZoomFrame(wwd);
+            if (zoomFrame == null)
+                zoomFrame = new ZoomFrame(wwd);
             zoomFrame.setVisible(true);
         }
     }

@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2fab326-41dd-46a9-83a2-7d1d18d9395f" name="Default" comment="" />
+    <list default="true" id="a2fab326-41dd-46a9-83a2-7d1d18d9395f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/worldwind/LocationQuery.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/worldwind/RouteFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/gov/nasa/worldwindx/examples/analytics/AnalyticSurface$GridPointAttributes.class" afterPath="$PROJECT_DIR$/build/classes/gov/nasa/worldwindx/examples/analytics/AnalyticSurface$GridPointAttributes.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/gov/nasa/worldwindx/examples/analytics/AnalyticSurfaceLegend$LabelAttributes.class" afterPath="$PROJECT_DIR$/build/classes/gov/nasa/worldwindx/examples/analytics/AnalyticSurfaceLegend$LabelAttributes.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/gov/nasa/worldwindx/examples/dataimport/InstallImageryAndElevationsDemo$InstalledDataFrame$4.class" afterPath="$PROJECT_DIR$/build/classes/gov/nasa/worldwindx/examples/dataimport/InstallImageryAndElevationsDemo$InstalledDataFrame$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/gov/nasa/worldwindx/examples/dataimport/InstallImageryAndElevationsDemo$InstalledDataFrame.class" afterPath="$PROJECT_DIR$/build/classes/gov/nasa/worldwindx/examples/dataimport/InstallImageryAndElevationsDemo$InstalledDataFrame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/gov/nasa/worldwindx/examples/shapebuilder/AbstractShapeEditor.class" afterPath="$PROJECT_DIR$/build/classes/gov/nasa/worldwindx/examples/shapebuilder/AbstractShapeEditor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/build-impl.xml" afterPath="$PROJECT_DIR$/nbproject/build-impl.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/genfiles.properties" afterPath="$PROJECT_DIR$/nbproject/genfiles.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/private/private.properties" afterPath="$PROJECT_DIR$/nbproject/private/private.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/private/private.xml" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/worldwind/AppMenuBar.java" afterPath="$PROJECT_DIR$/src/worldwind/AppMenuBar.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/worldwind/SimpleWWJ.java" afterPath="$PROJECT_DIR$/src/worldwind/SimpleWWJ.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/worldwind/ZoomFrame.java" afterPath="$PROJECT_DIR$/src/worldwind/ZoomFrame.java" />
+    </list>
     <ignored path="POO.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -61,7 +78,7 @@
       <file leaf-file-name="SimpleWWJ.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/worldwind/SimpleWWJ.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="32" column="24" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -70,18 +87,16 @@
       <file leaf-file-name="AppMenuBar.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/worldwind/AppMenuBar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="54" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="60" column="4" selection-start="1922" selection-end="1922" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GlobeView.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GlobeView.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/worldwind/GlobeView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="10" selection-start="3482" selection-end="3482" vertical-scroll-proportion="0.81010455">
+            <state line="52" column="10" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -90,16 +105,36 @@
       <file leaf-file-name="ZoomFrame.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/worldwind/ZoomFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="27" selection-start="2761" selection-end="2761" vertical-scroll-proportion="0.0">
+            <state line="6" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GazetteerPanel.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="LocationQuery.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/worldwind/LocationQuery.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="47" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RouteFrame.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/worldwind/RouteFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="22" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GazetteerPanel.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/GazetteerPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="269" column="4" selection-start="9979" selection-end="9979" vertical-scroll-proportion="0.0">
+            <state line="80" column="20" selection-start="2950" selection-end="2950" vertical-scroll-proportion="0.98275864">
               <folding />
             </state>
           </provider>
@@ -114,14 +149,13 @@
   </component>
   <component name="Git.Settings">
     <option name="CHECKOUT_INCLUDE_TAGS" value="false" />
+    <option name="SSH_EXECUTABLE" value="NATIVE_SSH" />
     <option name="UPDATE_CHANGES_POLICY" value="STASH" />
     <option name="LINE_SEPARATORS_CONVERSION" value="ASK" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/dataimport/InstallImageryAndElevationsDemo.java" />
-        <option value="$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/GazetteerPanel.java" />
         <option value="$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/GoToCoordinatePanel.java" />
         <option value="$PROJECT_DIR$/src/worldwind/HelloWWJ.java" />
         <option value="$PROJECT_DIR$/src/worldwind/licence.txt" />
@@ -131,11 +165,13 @@
         <option value="$PROJECT_DIR$/src/worldwind/Application.java" />
         <option value="$PROJECT_DIR$/src/worldwind/ViewPanel.java" />
         <option value="$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/LayerPanel.java" />
-        <option value="$PROJECT_DIR$/src/worldwind/SimpleWWJ.java" />
         <option value="$PROJECT_DIR$/src/worldwind/GlobeView.java" />
         <option value="$PROJECT_DIR$/src/worldwind/ZoomDialog.java" />
-        <option value="$PROJECT_DIR$/src/worldwind/ZoomFrame.java" />
+        <option value="$PROJECT_DIR$/src/worldwind/SimpleWWJ.java" />
         <option value="$PROJECT_DIR$/src/worldwind/AppMenuBar.java" />
+        <option value="$PROJECT_DIR$/src/worldwind/RouteFrame.java" />
+        <option value="$PROJECT_DIR$/src/worldwind/ZoomFrame.java" />
+        <option value="$PROJECT_DIR$/src/worldwind/LocationQuery.java" />
       </list>
     </option>
   </component>
@@ -145,7 +181,7 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -171,6 +207,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -223,8 +261,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -232,7 +268,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -482,7 +518,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -494,11 +530,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.49599144" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24692678" sideWeight="0.40468228" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24692678" sideWeight="0.40691194" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24692678" sideWeight="0.2575251" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32998884" sideWeight="0.5002672" order="2" side_tool="true" content_ui="tabs" x="526" y="597" width="1356" height="296" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24692678" sideWeight="0.67001116" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5002672" order="2" side_tool="true" content_ui="tabs" x="526" y="597" width="1356" height="296" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -562,16 +598,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/FlatWorld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="37" selection-start="1635" selection-end="1635" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/FlatWorldPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="28" selection-start="958" selection-end="958" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/view/ViewSwitch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="0" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.029616725" />
@@ -592,11 +618,6 @@
         <state line="84" column="13" selection-start="2853" selection-end="2853" vertical-scroll-proportion="0.026132405" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/Placemarks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="653" selection-end="653" vertical-scroll-proportion="0.31358886" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/PlaceNames.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="13" selection-start="620" selection-end="620" vertical-scroll-proportion="0.0" />
@@ -612,38 +633,63 @@
         <state line="25" column="13" selection-start="833" selection-end="833" vertical-scroll-proportion="0.28745645" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/GazetteerApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="54" selection-start="395" selection-end="395" vertical-scroll-proportion="0.18292683" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/worldwind/SimpleWWJ.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/worldwind/ZoomFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="27" selection-start="2761" selection-end="2761" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/GazetteerPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="269" column="4" selection-start="9979" selection-end="9979" vertical-scroll-proportion="0.0" />
+        <state line="32" column="24" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/worldwind/AppMenuBar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="54" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
+        <state line="60" column="4" selection-start="1922" selection-end="1922" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/worldwind/ZoomFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/worldwind/LocationQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="47" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/worldwind/GlobeView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="10" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/Placemarks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="57" selection-start="2402" selection-end="2402" vertical-scroll-proportion="0.6533101">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/GazetteerApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="2" selection-start="623" selection-end="623" vertical-scroll-proportion="0.31358886">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/worldwind/RouteFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="22" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/worldwind/GlobeView.java">
+    <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/GazetteerPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="10" selection-start="3482" selection-end="3482" vertical-scroll-proportion="0.81010455">
+        <state line="80" column="20" selection-start="2950" selection-end="2950" vertical-scroll-proportion="0.98275864">
           <folding />
         </state>
       </provider>

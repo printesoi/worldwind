@@ -2,7 +2,6 @@ package worldwind;
 
 import gov.nasa.worldwind.BasicModel;
 import gov.nasa.worldwind.awt.WorldWindowGLCanvas;
-import gov.nasa.worldwind.layers.LayerList;
 import gov.nasa.worldwind.WorldWindow;
 import gov.nasa.worldwind.layers.*;
 
