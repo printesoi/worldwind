@@ -21,10 +21,13 @@ public class AppMenuBar extends JMenuBar implements ActionListener{
 
         JMenu optionsMenu = new JMenu("Options");
         JMenuItem zoomLocation = new JMenuItem("Go to location");
+        JMenuItem route = new JMenuItem("Create a route");
         JMenuItem quit = new JMenuItem("Quit");
         quit.addActionListener(this);
         zoomLocation.addActionListener(this);
+        route.addActionListener(this);
         optionsMenu.add(zoomLocation);
+        optionsMenu.add(route);
         optionsMenu.add(new JSeparator());
         optionsMenu.add(quit);
 
@@ -47,16 +50,24 @@ public class AppMenuBar extends JMenuBar implements ActionListener{
             if (result == 0) {
                 System.exit(0);
             }
+            return;
         }
         
         if (src.equals("About")) {
             new AboutWindow(owner, instance);
+            return;
         }
         
         if (src.equals("Go to location")) {
             if (zoomFrame == null)
                 zoomFrame = new ZoomFrame(wwd);
             zoomFrame.setVisible(true);
+            return;
+        }
+        
+        if (src.equals("Create a route")) {
+            RouteFrame rf = new RouteFrame(wwd);
+            rf.setVisible(true);
         }
     }
 }

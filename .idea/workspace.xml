@@ -1,21 +1,888 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYSIS_IN_BACKGROUND" value="true" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a2fab326-41dd-46a9-83a2-7d1d18d9395f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/worldwind/LocationQuery.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/worldwind/RouteFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/gov/nasa/worldwindx/examples/analytics/AnalyticSurface$GridPointAttributes.class" afterPath="$PROJECT_DIR$/build/classes/gov/nasa/worldwindx/examples/analytics/AnalyticSurface$GridPointAttributes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/gov/nasa/worldwindx/examples/analytics/AnalyticSurfaceLegend$LabelAttributes.class" afterPath="$PROJECT_DIR$/build/classes/gov/nasa/worldwindx/examples/analytics/AnalyticSurfaceLegend$LabelAttributes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/gov/nasa/worldwindx/examples/dataimport/InstallImageryAndElevationsDemo$InstalledDataFrame$4.class" afterPath="$PROJECT_DIR$/build/classes/gov/nasa/worldwindx/examples/dataimport/InstallImageryAndElevationsDemo$InstalledDataFrame$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/gov/nasa/worldwindx/examples/dataimport/InstallImageryAndElevationsDemo$InstalledDataFrame.class" afterPath="$PROJECT_DIR$/build/classes/gov/nasa/worldwindx/examples/dataimport/InstallImageryAndElevationsDemo$InstalledDataFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/gov/nasa/worldwindx/examples/shapebuilder/AbstractShapeEditor.class" afterPath="$PROJECT_DIR$/build/classes/gov/nasa/worldwindx/examples/shapebuilder/AbstractShapeEditor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/worldwind/LocationService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/worldwind/RoutePointEventListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/worldwind/RoutePointPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/worldwind/RoutePointPanelLocationSelectedEvent.java" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AirspaceBuilder$AirspaceBuilderController$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AirspaceBuilder$AirspaceBuilderController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AirspaceBuilder$AirspaceBuilderController$2$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AirspaceBuilder$AirspaceBuilderController$2$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AirspaceBuilder$AirspaceBuilderController$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AirspaceBuilder$AirspaceBuilderController$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AirspaceBuilder$AirspaceBuilderController$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AirspaceBuilder$AirspaceBuilderController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AirspaceBuilder$AirspaceBuilderModel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AirspaceBuilder$AirspaceBuilderPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AirspaceBuilder$AirspaceBuilderPanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AirspaceBuilder$AirspaceBuilderPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AirspaceBuilder$AirspaceEntry.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AirspaceBuilder$AirspaceFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AirspaceBuilder$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AirspaceBuilder$AppFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AirspaceBuilder$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AirspaceBuilder$PolygonAirspaceFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AirspaceBuilder$SphereAirspaceFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AirspaceBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Airspaces$AirspacesController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Airspaces$AirspacesController$2$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Airspaces$AirspacesController$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Airspaces$AirspacesController$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Airspaces$AirspacesController$3$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Airspaces$AirspacesController$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Airspaces$AirspacesController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Airspaces$AirspacesPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Airspaces$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Airspaces.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AlarmIcons$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AlarmIcons$AppFrame$FlashingAlarmAction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AlarmIcons$AppFrame$PulsingAlarmAction$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AlarmIcons$AppFrame$PulsingAlarmAction$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AlarmIcons$AppFrame$PulsingAlarmAction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AlarmIcons$AppFrame$StaticAlarmAction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AlarmIcons$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AlarmIcons.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AnnotationControls$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AnnotationControls$AudioContentAnnotation$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AnnotationControls$AudioContentAnnotation$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AnnotationControls$AudioContentAnnotation$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AnnotationControls$AudioContentAnnotation.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AnnotationControls$ContentAnnotation.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AnnotationControls$ImageContentAnnotation.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\AnnotationControls.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$10.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$11.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$12.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$13.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$14.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$15.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$16.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$17.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$18.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$19.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$1SimpleGlobeAnnotation.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$20.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$21.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$22.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$23.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$24.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$25.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$26.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$27.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$28.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$29.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$30.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$31.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$32.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$33.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$34.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$35.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$36.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$37.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$38.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$39.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$40.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$41.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$42.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$43.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$44.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$8.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$9.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame$AMSLGlobeAnnotation.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Annotations.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ApplicationTemplate$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ApplicationTemplate$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ApplicationTemplate$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ApplicationTemplate$AppPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ApplicationTemplate.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Balloons$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Balloons.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\BathymetryRemoval$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\BathymetryRemoval.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Boxes$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Boxes.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\BulkDownload$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\BulkDownload.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\BulkDownloadPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\BulkDownloadPanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\BulkDownloadPanel$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\BulkDownloadPanel$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\BulkDownloadPanel$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\BulkDownloadPanel$BulkRetrievablePanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\BulkDownloadPanel$BulkRetrievablePanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\BulkDownloadPanel$BulkRetrievablePanel$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\BulkDownloadPanel$BulkRetrievablePanel$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\BulkDownloadPanel$BulkRetrievablePanel$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\BulkDownloadPanel$BulkRetrievablePanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\BulkDownloadPanel$DownloadMonitorPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\BulkDownloadPanel$DownloadMonitorPanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\BulkDownloadPanel$DownloadMonitorPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\BulkDownloadPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ClickAndGoSelectListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Cones$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Cones$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Cones.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ConfiguringGLRuntimeCapabilities$MyGLAutoDrawable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ConfiguringGLRuntimeCapabilities.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ContextMenusOnShapes$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ContextMenusOnShapes$ContextMenu.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ContextMenusOnShapes$ContextMenuController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ContextMenusOnShapes$ContextMenuInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ContextMenusOnShapes$ContextMenuItemAction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ContextMenusOnShapes$ContextMenuItemInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ContextMenusOnShapes.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ContourLines$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ContourLines$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ContourLines.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\CustomElevationModel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Cylinders$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Cylinders$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Cylinders.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\DeepPicking$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\DeepPicking$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\DeepPicking.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\DetailHints$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\DetailHints$AppFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\DetailHints$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\DetailHints.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\DraggingShapes$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\DraggingShapes.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Ellipsoids$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Ellipsoids$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Ellipsoids.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ExportImageOrElevations$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ExportImageOrElevations$AppFrame$2$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ExportImageOrElevations$AppFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ExportImageOrElevations$AppFrame$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ExportImageOrElevations$AppFrame$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ExportImageOrElevations$AppFrame$DisableSelectorAction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ExportImageOrElevations$AppFrame$EnableSelectorAction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ExportImageOrElevations$AppFrame$GeotiffFileFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ExportImageOrElevations$AppFrame$SaveElevationsAction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ExportImageOrElevations$AppFrame$SaveImageAction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ExportImageOrElevations$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ExportImageOrElevations.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ExtrudedPolygons$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ExtrudedPolygons.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ExtrudedPolygonsFromShapefile$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ExtrudedPolygonsFromShapefile$AppFrame$WorkerThread$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ExtrudedPolygonsFromShapefile$AppFrame$WorkerThread$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ExtrudedPolygonsFromShapefile$AppFrame$WorkerThread.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ExtrudedPolygonsFromShapefile$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ExtrudedPolygonsFromShapefile.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ExtrudedShapes$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ExtrudedShapes$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ExtrudedShapes.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\FlatWorld$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\FlatWorld.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\FlatWorldEarthquakes$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\FlatWorldEarthquakes$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\FlatWorldEarthquakes$AppFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\FlatWorldEarthquakes$AppFrame$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\FlatWorldEarthquakes$AppFrame$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\FlatWorldEarthquakes$AppFrame$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\FlatWorldEarthquakes$AppFrame$6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\FlatWorldEarthquakes$AppFrame$7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\FlatWorldEarthquakes$AppFrame$8.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\FlatWorldEarthquakes$AppFrame$Blinker$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\FlatWorldEarthquakes$AppFrame$Blinker.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\FlatWorldEarthquakes$AppFrame$Earthquake.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\FlatWorldEarthquakes$AppFrame$EqAnnotation.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\FlatWorldEarthquakes$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\FlatWorldEarthquakes.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\FlatWorldPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\FlatWorldPanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\FlatWorldPanel$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\FlatWorldPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GPSTracks$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GPSTracks$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GPSTracks.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GazetteerApp$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GazetteerApp.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GazetteerPanel$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GazetteerPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GazetteerPanel$2$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GazetteerPanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GazetteerPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GeoJSONLoader.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GeoRSS$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GeoRSS.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GetBestElevations$AppFrame$1$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GetBestElevations$AppFrame$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GetBestElevations$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GetBestElevations$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GetBestElevations.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GoToCoordinatePanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GoToCoordinatePanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GoToCoordinatePanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Graticule$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Graticule.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GraticuleAttributesPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GraticuleAttributesPanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GraticuleAttributesPanel$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GraticuleAttributesPanel$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GraticuleAttributesPanel$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GraticuleAttributesPanel$6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GraticuleAttributesPanel$7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GraticuleAttributesPanel$8.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GraticuleAttributesPanel$9.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GraticuleAttributesPanel$ColorPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GraticuleAttributesPanel$ColorPanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GraticuleAttributesPanel$ColorPanel$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GraticuleAttributesPanel$ColorPanel$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GraticuleAttributesPanel$ColorPanel$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GraticuleAttributesPanel$ColorPanel$6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GraticuleAttributesPanel$ColorPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GraticuleAttributesPanel$LineStyleRenderer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\GraticuleAttributesPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\HelloWorldWind$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\HelloWorldWind$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\HelloWorldWind.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\KeepingObjectsInView$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\KeepingObjectsInView$AppFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\KeepingObjectsInView$AppFrame$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\KeepingObjectsInView$AppFrame$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\KeepingObjectsInView$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\KeepingObjectsInView$ViewAnimator$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\KeepingObjectsInView$ViewAnimator.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\KeepingObjectsInView$ViewController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\KeepingObjectsInView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\LayerPanel$LayerAction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\LayerPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\LayerTreeUsage$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\LayerTreeUsage.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\LineBackground$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\LineBackground.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\LineBuilder$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\LineBuilder$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\LineBuilder$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\LineBuilder$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\LineBuilder$LinePanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\LineBuilder$LinePanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\LineBuilder$LinePanel$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\LineBuilder$LinePanel$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\LineBuilder$LinePanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\LineBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\LocalDataOnly$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\LocalDataOnly.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\LoggingControl$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\LoggingControl$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\LoggingControl$MyHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\LoggingControl.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MGRSAttributesPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MGRSAttributesPanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MGRSAttributesPanel$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MGRSAttributesPanel$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MGRSAttributesPanel$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MGRSAttributesPanel$6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MGRSAttributesPanel$GraticuleTypeListRenderer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MGRSAttributesPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MGRSGraticule$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MGRSGraticule.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Markers$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Markers$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Markers.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MarkersOrder$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MarkersOrder$AppFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MarkersOrder$AppFrame$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MarkersOrder$AppFrame$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MarkersOrder$AppFrame$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MarkersOrder$AppFrame$6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MarkersOrder$AppFrame$TimedMarker.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MarkersOrder$AppFrame$TimedMarkerLayer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MarkersOrder$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MarkersOrder.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolPanel$10.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolPanel$11.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolPanel$12.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolPanel$13.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolPanel$14.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolPanel$15.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolPanel$16.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolPanel$17.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolPanel$18.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolPanel$19.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolPanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolPanel$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolPanel$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolPanel$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolPanel$6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolPanel$7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolPanel$8.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolPanel$9.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolUsage$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolUsage$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolUsage$AppFrame$MeasureToolListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolUsage$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MeasureToolUsage.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MultiResPath$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\MultiResPath.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\NetworkOfflineMode$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\NetworkOfflineMode$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\NetworkOfflineMode.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\OnScreenLayerManager$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\OnScreenLayerManager.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\PathPositionColors$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\PathPositionColors$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\PathPositionColors$ExamplePositionColors.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\PathPositionColors.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Paths$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Paths.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\PathsWithDirection$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\PathsWithDirection.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\PathsWithLabels$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\PathsWithLabels.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\PickFrustum$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\PickFrustum$AppFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\PickFrustum$AppFrame$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\PickFrustum$AppFrame$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\PickFrustum$AppFrame$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\PickFrustum$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\PickFrustum$PickFrustumLayer$OrderedIcon.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\PickFrustum$PickFrustumLayer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\PickFrustum.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\PlaceNames$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\PlaceNames.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\PlaceNamesPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Placemarks$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Placemarks.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Polygons$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Polygons.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Pyramids$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Pyramids.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\RemoteSurfaceImage$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\RemoteSurfaceImage.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\RigidShapes$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\RigidShapes.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\RotatedSector$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\RotatedSector$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\RotatedSector.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\RubberSheetImage$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\RubberSheetImage$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\RubberSheetImage$Controller$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\RubberSheetImage$Controller$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\RubberSheetImage$Controller$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\RubberSheetImage$Controller.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\RubberSheetImage$SurfaceImageEntry.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\RubberSheetImage.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ScankortDenmark$MyAppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ScankortDenmark.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ScreenImageDragging$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ScreenImageDragging$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ScreenImageDragging.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ScreenSelection$AppFrame$DisableSelectorAction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ScreenSelection$AppFrame$EnableSelectorAction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ScreenSelection$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ScreenSelection$SelectionHighlightController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ScreenSelection.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ScreenShots$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ScreenShots.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SectorSelection$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SectorSelection$AppFrame$DisableSelectorAction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SectorSelection$AppFrame$EnableSelectorAction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SectorSelection$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SectorSelection.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapefiles$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapefiles$AppFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapefiles$AppFrame$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapefiles$AppFrame$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapefiles$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapefiles$WorkerThread$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapefiles$WorkerThread$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapefiles$WorkerThread.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapefiles.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapes$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapes$AppFrame$10.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapes$AppFrame$11.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapes$AppFrame$12.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapes$AppFrame$13.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapes$AppFrame$14.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapes$AppFrame$15.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapes$AppFrame$16.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapes$AppFrame$17.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapes$AppFrame$18.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapes$AppFrame$19.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapes$AppFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapes$AppFrame$20.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapes$AppFrame$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapes$AppFrame$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapes$AppFrame$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapes$AppFrame$6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapes$AppFrame$7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapes$AppFrame$8.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapes$AppFrame$9.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapes$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapes$Info.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shapes.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shutdown$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shutdown$AppFrame$CreateWindowAction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shutdown$AppFrame$ShutdownWindowAction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shutdown$AppFrame$ShutdownWorldWindAction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shutdown$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Shutdown.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SimpleShapeDragging$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SimpleShapeDragging$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SimpleShapeDragging.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SimplestPossibleExample$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SimplestPossibleExample.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SplitPaneUsage$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SplitPaneUsage$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SplitPaneUsage$AppPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SplitPaneUsage.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Stereo.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SurfaceImageViewer$AppFrame$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SurfaceImageViewer$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SurfaceImageViewer$AppFrame$2$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SurfaceImageViewer$AppFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SurfaceImageViewer$AppFrame$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SurfaceImageViewer$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SurfaceImageViewer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SurfaceImages$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SurfaceImages.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SurfaceShapes.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SurfaceTextUsage$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\SurfaceTextUsage.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Symbology$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Symbology.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TabbedPaneUsage$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TabbedPaneUsage$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TabbedPaneUsage$WWJPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TabbedPaneUsage.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TerrainIntersections$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TerrainIntersections$AppFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TerrainIntersections$AppFrame$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TerrainIntersections$AppFrame$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TerrainIntersections$AppFrame$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TerrainIntersections$AppFrame$6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TerrainIntersections$AppFrame$7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TerrainIntersections$AppFrame$Intersector.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TerrainIntersections$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TerrainIntersections.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TerrainProfiler$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TerrainProfiler$AppFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TerrainProfiler$AppFrame$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TerrainProfiler$AppFrame$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TerrainProfiler$AppFrame$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TerrainProfiler$AppFrame$6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TerrainProfiler$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TerrainProfiler.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TreeFiltering$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TreeFiltering$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TreeFiltering$MyMarkerLayer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\TreeFiltering.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\VPFLayerDemo$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\VPFLayerDemo$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\VPFLayerDemo$VPFFileFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\VPFLayerDemo.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\VideoOnTerrain$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\VideoOnTerrain$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\VideoOnTerrain$SurfaceImageDragger.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\VideoOnTerrain.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewControls$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewControls$AppFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewControls$AppFrame$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewControls$AppFrame$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewControls$AppFrame$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewControls$AppFrame$6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewControls$AppFrame$7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewControls$AppFrame$8.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewControls$AppFrame$9.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewControls$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewControls.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewIteration$AppFrame$Backwards.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewIteration$AppFrame$FollowPath.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewIteration$AppFrame$Forward.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewIteration$AppFrame$GoToLatLonFromCurrent.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewIteration$AppFrame$Heading.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewIteration$AppFrame$PathAction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewIteration$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewIteration.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewLimits$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewLimits$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewLimits$Controller.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewLimits.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewLookAround$AppFrame$ViewControlPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewLookAround$AppFrame$ViewControlPanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewLookAround$AppFrame$ViewControlPanel$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewLookAround$AppFrame$ViewControlPanel$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewLookAround$AppFrame$ViewControlPanel$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewLookAround$AppFrame$ViewControlPanel$6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewLookAround$AppFrame$ViewControlPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewLookAround$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\ViewLookAround.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\WMSLayerManager$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\WMSLayerManager$AppFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\WMSLayerManager$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\WMSLayerManager.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\WMSLayersPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\WMSLayersPanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\WMSLayersPanel$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\WMSLayersPanel$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\WMSLayersPanel$LayerInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\WMSLayersPanel$LayerInfoAction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\WMSLayersPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\WebBrowserBalloons$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\WebBrowserBalloons.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Wedges$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Wedges$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\Wedges.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\WorldWindDiagnostics$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\WorldWindDiagnostics$GLFrame$Attr.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\WorldWindDiagnostics$GLFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\WorldWindDiagnostics$MainFrame$RunAction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\WorldWindDiagnostics$MainFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\WorldWindDiagnostics.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\analytics\AnalyticSurface$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\analytics\AnalyticSurface$AnalyticSurfaceObject.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\analytics\AnalyticSurface$ClampToGroundSurface.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\analytics\AnalyticSurface$GridPointAttributes.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\analytics\AnalyticSurface$OrderedSurface.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\analytics\AnalyticSurface$RenderInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\analytics\AnalyticSurface$ShadowSurface.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\analytics\AnalyticSurface.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\analytics\AnalyticSurfaceAttributes.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\analytics\AnalyticSurfaceDemo$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\analytics\AnalyticSurfaceDemo$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\analytics\AnalyticSurfaceDemo$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\analytics\AnalyticSurfaceDemo$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\analytics\AnalyticSurfaceDemo$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\analytics\AnalyticSurfaceDemo$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\analytics\AnalyticSurfaceDemo$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\analytics\AnalyticSurfaceDemo.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\analytics\AnalyticSurfaceLegend$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\analytics\AnalyticSurfaceLegend$LabelAttributes.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\analytics\AnalyticSurfaceLegend$LabelRenderable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\analytics\AnalyticSurfaceLegend$OrderedLabel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\analytics\AnalyticSurfaceLegend.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\applet\WWJApplet.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\applet\WWJAppletMinimal.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\applet\index_applet.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\applet\index_applet_cookie.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\applet\index_applet_fullscreen.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\applet\index_applet_params.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\applet\index_applet_text_and_links.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\applet\package.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\data\BrowserBalloonExample.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\data\CustomElevationModel.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\DataInstallUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\ImportElevations$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\ImportElevations$AppFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\ImportElevations$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\ImportElevations.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\ImportImagery$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\ImportImagery$AppFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\ImportImagery$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\ImportImagery.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\InstallElevations$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\InstallElevations$AppFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\InstallElevations$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\InstallElevations.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\InstallImagery$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\InstallImagery$AppFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\InstallImagery$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\InstallImagery.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\InstallImageryAndElevationsDemo$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\InstallImageryAndElevationsDemo$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\InstallImageryAndElevationsDemo$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\InstallImageryAndElevationsDemo$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\InstallImageryAndElevationsDemo$AppFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\InstallImageryAndElevationsDemo$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\InstallImageryAndElevationsDemo$InstallableDataFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\InstallImageryAndElevationsDemo$InstalledDataFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\InstallImageryAndElevationsDemo$InstalledDataFrame$2$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\InstallImageryAndElevationsDemo$InstalledDataFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\InstallImageryAndElevationsDemo$InstalledDataFrame$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\InstallImageryAndElevationsDemo$InstalledDataFrame$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\InstallImageryAndElevationsDemo$InstalledDataFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\InstallImageryAndElevationsDemo.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\InstalledDataPanel$GoToSectorAction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\InstalledDataPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\dataimport\package.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\elevations\ElevationsRetriever$ElevationsRetrieverPostProcessor.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\elevations\ElevationsRetriever.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\elevations\GetElevationsPostProcessor.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\elevations\RetrieveElevations$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\elevations\RetrieveElevations$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\elevations\RetrieveElevations$ElevationsDemoController$NotifyWhenReady.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\elevations\RetrieveElevations$ElevationsDemoController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\elevations\RetrieveElevations.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\images\16x16-button-cancel.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\images\16x16-button-depressed-mask.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\images\16x16-button-end.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\images\16x16-button-next.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\images\16x16-button-pause.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\images\16x16-button-play.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\images\16x16-button-previous.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\images\16x16-button-start.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\images\16x16-button-window-decrease.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\images\16x16-button-window-increase.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\images\500px-Checkerboard_pattern.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\images\GLIDERTestImage-800x519.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\images\MountStHelens.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\images\antenna.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\images\audioicon-64.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\images\build123sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\images\georss.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\images\imageicon-64.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\images\ireland.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\images\new_zealand.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\images\the_nut.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\kml\ExportKML.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\kml\KMLApplicationController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\kml\KMLDocumentBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\kml\KMLFlyViewController$FlyToLookAtAnimator.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\kml\KMLFlyViewController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\kml\KMLOrbitViewController$EyePositionAnimator.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\kml\KMLOrbitViewController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\kml\KMLViewController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\kml\KMLViewer$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\kml\KMLViewer$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\kml\KMLViewer$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\kml\KMLViewer$AppFrame$2$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\kml\KMLViewer$AppFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\kml\KMLViewer$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\kml\KMLViewer$WorkerThread$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\kml\KMLViewer$WorkerThread.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\kml\KMLViewer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\kml\KMZDocumentBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\kml\package.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\AbstractShapeIntersection$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\AbstractShapeIntersection$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\AbstractShapeIntersection.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\ExtrudedPolygonIntersection$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\ExtrudedPolygonIntersection$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\ExtrudedPolygonIntersection.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\GridOfPoints$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\GridOfPoints$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\GridOfPoints$PositionIterator.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\GridOfPoints.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\LineIntersector$InternalIntersector.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\LineIntersector.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\LinesOfSight$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\LinesOfSight$AppFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\LinesOfSight$AppFrame$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\LinesOfSight$AppFrame$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\LinesOfSight$AppFrame$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\LinesOfSight$AppFrame$6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\LinesOfSight$AppFrame$7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\LinesOfSight$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\LinesOfSight$ShapeLoaderThread$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\LinesOfSight$ShapeLoaderThread.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\LinesOfSight.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\PointGrid$Attributes.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\PointGrid.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\PolygonIntersection$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\PolygonIntersection$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\PolygonIntersection.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\ShapeLineIntersector.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\TerrainLineIntersector.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\lineofsight\package.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\multiwindow\CardLayoutUsage$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\multiwindow\CardLayoutUsage$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\multiwindow\CardLayoutUsage$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\multiwindow\CardLayoutUsage$WWPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\multiwindow\CardLayoutUsage.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\multiwindow\FlatAndRoundGlobes$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\multiwindow\FlatAndRoundGlobes$WWFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\multiwindow\FlatAndRoundGlobes$WWPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\multiwindow\FlatAndRoundGlobes.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\multiwindow\MultiFrame$CanvasFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\multiwindow\MultiFrame$WWPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\multiwindow\MultiFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\multiwindow\TabbedPaneUsage$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\multiwindow\TabbedPaneUsage$WWPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\multiwindow\TabbedPaneUsage.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\multiwindow\ViewViewVolume$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\multiwindow\ViewViewVolume$WWPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\multiwindow\ViewViewVolume.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\multiwindow\ViewVolumeViewer$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\multiwindow\ViewVolumeViewer$SectorGeometryLayer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\multiwindow\ViewVolumeViewer$ViewVolumeLayer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\multiwindow\ViewVolumeViewer$WWPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\multiwindow\ViewVolumeViewer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\multiwindow\package.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\AbstractShapeEditor.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\BoxEditor$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\BoxEditor.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\ConeEditor$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\ConeEditor.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\CylinderEditor$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\CylinderEditor.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\ExtrudedPolygonBuilder$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\ExtrudedPolygonBuilder$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\ExtrudedPolygonBuilder$ExtrudedPolygonFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\ExtrudedPolygonBuilder$PolygonBuilderController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\ExtrudedPolygonBuilder$PolygonBuilderModel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\ExtrudedPolygonBuilder$PolygonBuilderPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\ExtrudedPolygonBuilder$PolygonBuilderPanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\ExtrudedPolygonBuilder$PolygonBuilderPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\ExtrudedPolygonBuilder$PolygonEntry.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\ExtrudedPolygonBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\ExtrudedPolygonEditor$ControlPointMarker.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\ExtrudedPolygonEditor.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\PyramidEditor$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\PyramidEditor.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$AbstractShapeBuilderController$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$AbstractShapeBuilderController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$AbstractShapeBuilderController$2$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$AbstractShapeBuilderController$2$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$AbstractShapeBuilderController$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$AbstractShapeBuilderController$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$AbstractShapeBuilderController$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$AbstractShapeBuilderController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$AbstractShapeBuilderModel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$AbstractShapeBuilderPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$AbstractShapeBuilderPanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$AbstractShapeBuilderPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$AbstractShapeEntry.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$AbstractShapeFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$AppFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$AppFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$AppFrame$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$BoxFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$ConeFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$CylinderFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$EditMode.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$EllipsoidFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$ExtrudedPolygonFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$PyramidFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder$WedgeFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeEditor$ControlPointMarker.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeEditor$Direction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\RigidShapeEditor.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\WedgeEditor$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\WedgeEditor.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\shapebuilder\package.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\AudioPlayer$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\AudioPlayer$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\AudioPlayer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\AudioPlayerAnnotation.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\AudioPlayerAnnotationController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\AudioPlayerAnnotationController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\BalloonController$DocumentRetrievalTask$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\BalloonController$DocumentRetrievalTask$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\BalloonController$DocumentRetrievalTask.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\BalloonController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\BalloonResizeController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\ButtonAnnotation.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\DialogAnnotation$BusyImage.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\DialogAnnotation.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\DialogAnnotationController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\DirectedPath.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\ExampleUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\ExtentVisibilitySupport$ScreenExtent.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\ExtentVisibilitySupport.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\FileStoreDataSet$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\FileStoreDataSet$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\FileStoreDataSet$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\FileStoreDataSet$LeafInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\FileStoreDataSet.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\HighlightController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\HotSpotController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\ImageAnnotation.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\LabeledPath.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\LayerManagerLayer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\OpenStreetMapShapefileLoader$Label.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\OpenStreetMapShapefileLoader$OSMShapes.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\OpenStreetMapShapefileLoader$TextAndShapesLayer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\OpenStreetMapShapefileLoader.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\PowerOfTwoPaddedImage.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\ProgressAnnotation.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\RandomShapeAttributes.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\ScreenSelector$SelectionRectangle.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\ScreenSelector.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\ScreenShotAction.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\SectorSelector$RegionShape.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\SectorSelector.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\ShapeUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\ShapefileLoader.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\SlideShowAnnotation.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\SlideShowAnnotationController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\SlideShowAnnotationController$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\SlideShowAnnotationController$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\SlideShowAnnotationController$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\SlideShowAnnotationController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\StatusLayer$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\StatusLayer$2$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\StatusLayer$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\StatusLayer$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\StatusLayer$OrderedIcon.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\StatusLayer$StatusMGRSLayer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\StatusLayer$StatusUTMLayer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\StatusLayer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\SurfaceImageEditor$ControlPointMarker.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\SurfaceImageEditor.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\ToolTip.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\ToolTipAnnotation.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\ToolTipController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\TreeControl$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\TreeControl.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\ViewVolumeRenderer$OrderedViewVolume.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\ViewVolumeRenderer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\cachecleaner\CacheTable$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\cachecleaner\CacheTable$CacheModel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\cachecleaner\CacheTable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\cachecleaner\DataCacheViewer$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\cachecleaner\DataCacheViewer$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\cachecleaner\DataCacheViewer$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\cachecleaner\DataCacheViewer$4$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\cachecleaner\DataCacheViewer$4$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\cachecleaner\DataCacheViewer$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\cachecleaner\DataCacheViewer$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\cachecleaner\DataCacheViewer$6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\util\cachecleaner\DataCacheViewer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\view\AddAnimator$AppFrame$ViewDisplay$FlyViewGazetteerPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\view\AddAnimator$AppFrame$ViewDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\view\AddAnimator$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\view\AddAnimator.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\view\ViewSwitch$AppFrame$ViewDisplay$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\view\ViewSwitch$AppFrame$ViewDisplay$ViewerClass.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\view\ViewSwitch$AppFrame$ViewDisplay$ViewerClassMap.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\view\ViewSwitch$AppFrame$ViewDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\view\ViewSwitch$AppFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\gov\nasa\worldwindx\examples\view\ViewSwitch.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\worldwind\AboutWindow$LicenceWindow.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\worldwind\AboutWindow.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\worldwind\AppMenuBar.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\worldwind\Application.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\worldwind\GlobeView$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\worldwind\GlobeView$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\worldwind\GlobeView$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\worldwind\GlobeView$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\worldwind\GlobeView$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\worldwind\GlobeView$PoliticalBoundaryItem.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\worldwind\GlobeView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\worldwind\SimpleWWJ.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\worldwind\ViewPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\worldwind\ViewPanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\worldwind\ViewPanel$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\worldwind\ViewPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\worldwind\ZoomFrame$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\worldwind\ZoomFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\worldwind\ZoomFrame$2$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\worldwind\ZoomFrame$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tzesoi\Desktop\PooWorldWind\out\production\PooWorldWind\worldwind\ZoomFrame.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/build-impl.xml" afterPath="$PROJECT_DIR$/nbproject/build-impl.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/genfiles.properties" afterPath="$PROJECT_DIR$/nbproject/genfiles.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/private/private.properties" afterPath="$PROJECT_DIR$/nbproject/private/private.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/private/private.xml" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/worldwind/AppMenuBar.java" afterPath="$PROJECT_DIR$/src/worldwind/AppMenuBar.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/worldwind/LocationQuery.java" afterPath="$PROJECT_DIR$/src/worldwind/LocationQuery.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/worldwind/RouteFrame.java" afterPath="$PROJECT_DIR$/src/worldwind/RouteFrame.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/worldwind/SimpleWWJ.java" afterPath="$PROJECT_DIR$/src/worldwind/SimpleWWJ.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/worldwind/ZoomFrame.java" afterPath="$PROJECT_DIR$/src/worldwind/ZoomFrame.java" />
     </list>
@@ -75,28 +942,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SimpleWWJ.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/worldwind/SimpleWWJ.java">
+      <file leaf-file-name="RoutePointPanel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/worldwind/RoutePointPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="24" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0">
+            <state line="56" column="27" selection-start="1961" selection-end="1961" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppMenuBar.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/worldwind/AppMenuBar.java">
+      <file leaf-file-name="RouteFrame.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/worldwind/RouteFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="4" selection-start="1922" selection-end="1922" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="194" column="36" selection-start="7233" selection-end="7233" vertical-scroll-proportion="0.66027874">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#900#917#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GlobeView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/worldwind/GlobeView.java">
+      <file leaf-file-name="Paths.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/Paths.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="10" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.0">
+            <state line="58" column="24" selection-start="2173" selection-end="2173" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -105,36 +975,16 @@
       <file leaf-file-name="ZoomFrame.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/worldwind/ZoomFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
+            <state line="52" column="54" selection-start="1657" selection-end="1657" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LocationQuery.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/worldwind/LocationQuery.java">
+      <file leaf-file-name="SimpleWWJ.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/worldwind/SimpleWWJ.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="47" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RouteFrame.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/worldwind/RouteFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="22" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GazetteerPanel.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/GazetteerPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="20" selection-start="2950" selection-end="2950" vertical-scroll-proportion="0.98275864">
+            <state line="40" column="0" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -156,10 +1006,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/GoToCoordinatePanel.java" />
-        <option value="$PROJECT_DIR$/src/worldwind/HelloWWJ.java" />
-        <option value="$PROJECT_DIR$/src/worldwind/licence.txt" />
-        <option value="$PROJECT_DIR$/src/worldwind/wwActionListener.java" />
         <option value="$PROJECT_DIR$/src/worldwind/AboutWindow.java" />
         <option value="$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/ApplicationTemplate.java" />
         <option value="$PROJECT_DIR$/src/worldwind/Application.java" />
@@ -167,11 +1013,15 @@
         <option value="$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/LayerPanel.java" />
         <option value="$PROJECT_DIR$/src/worldwind/GlobeView.java" />
         <option value="$PROJECT_DIR$/src/worldwind/ZoomDialog.java" />
-        <option value="$PROJECT_DIR$/src/worldwind/SimpleWWJ.java" />
-        <option value="$PROJECT_DIR$/src/worldwind/AppMenuBar.java" />
-        <option value="$PROJECT_DIR$/src/worldwind/RouteFrame.java" />
+        <option value="$PROJECT_DIR$/src/worldwind/LocationService.java" />
         <option value="$PROJECT_DIR$/src/worldwind/ZoomFrame.java" />
         <option value="$PROJECT_DIR$/src/worldwind/LocationQuery.java" />
+        <option value="$PROJECT_DIR$/src/worldwind/SimpleWWJ.java" />
+        <option value="$PROJECT_DIR$/src/worldwind/AppMenuBar.java" />
+        <option value="$PROJECT_DIR$/src/worldwind/RoutePointPanelLocationSelectedEvent.java" />
+        <option value="$PROJECT_DIR$/src/worldwind/RoutePointEventListener.java" />
+        <option value="$PROJECT_DIR$/src/worldwind/RoutePointPanel.java" />
+        <option value="$PROJECT_DIR$/src/worldwind/RouteFrame.java" />
       </list>
     </option>
   </component>
@@ -208,7 +1058,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -258,9 +1107,14 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -281,40 +1135,8 @@
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Application.SimpleWWJ">
-    <configuration default="false" name="FlatWorld" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="gov.nasa.worldwindx.examples.FlatWorld" />
-      <option name="VM_PARAMETERS" value="-Djava.library.path=C:\Users\tzesoi\Desktop\PooWorldWind\lib" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="PooWorldWind" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="PlaceNames" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="gov.nasa.worldwindx.examples.PlaceNames" />
-      <option name="VM_PARAMETERS" value="-Djava.library.path=C:\Users\tzesoi\Desktop\PooWorldWind\lib" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="PooWorldWind" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Placemarks" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="gov.nasa.worldwindx.examples.Placemarks" />
+    <configuration default="false" name="Shapes" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="gov.nasa.worldwindx.examples.Shapes" />
       <option name="VM_PARAMETERS" value="-Djava.library.path=C:\Users\tzesoi\Desktop\PooWorldWind\lib" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -347,6 +1169,38 @@
     </configuration>
     <configuration default="false" name="SimpleWWJ" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="worldwind.SimpleWWJ" />
+      <option name="VM_PARAMETERS" value="-Djava.library.path=C:\Users\tzesoi\Desktop\PooWorldWind\lib" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="PooWorldWind" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ApplicationTemplate" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="gov.nasa.worldwindx.examples.ApplicationTemplate" />
+      <option name="VM_PARAMETERS" value="-Djava.library.path=C:\Users\tzesoi\Desktop\PooWorldWind\lib" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="PooWorldWind" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Paths" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="gov.nasa.worldwindx.examples.Paths" />
       <option name="VM_PARAMETERS" value="-Djava.library.path=C:\Users\tzesoi\Desktop\PooWorldWind\lib" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -435,12 +1289,12 @@
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="VM_PARAMETERS" value="-Djava.library.path=C:\Users\tzesoi\Desktop\PooWorldWind\lib" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -479,11 +1333,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.FlatWorld" />
-      <item index="1" class="java.lang.String" itemvalue="Application.PlaceNames" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Placemarks" />
-      <item index="3" class="java.lang.String" itemvalue="Application.GazetteerApp" />
-      <item index="4" class="java.lang.String" itemvalue="Application.SimpleWWJ" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Shapes" />
+      <item index="1" class="java.lang.String" itemvalue="Application.GazetteerApp" />
+      <item index="2" class="java.lang.String" itemvalue="Application.SimpleWWJ" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ApplicationTemplate" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Paths" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -519,7 +1373,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -528,18 +1382,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.49599144" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.4810262" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24692678" sideWeight="0.40691194" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24692678" sideWeight="0.21962096" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24692678" sideWeight="0.67001116" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5002672" order="2" side_tool="true" content_ui="tabs" x="526" y="597" width="1356" height="296" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24692678" sideWeight="0.4425864" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5152325" order="2" side_tool="true" content_ui="tabs" x="526" y="597" width="1356" height="296" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39910814" sideWeight="0.49812934" order="10" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -598,99 +1452,96 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/view/ViewSwitch.java">
+    <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/GazetteerApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.029616725" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/worldwind/ViewPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="12" selection-start="2924" selection-end="2924" vertical-scroll-proportion="0.0" />
+        <state line="17" column="2" selection-start="623" selection-end="623" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/worldwind/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="20" selection-start="413" selection-end="413" vertical-scroll-proportion="0.33972126" />
+        <state line="2" column="13" selection-start="33" selection-end="33" vertical-scroll-proportion="0.054347824" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/LayerPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/worldwind/LocationService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="13" selection-start="2853" selection-end="2853" vertical-scroll-proportion="0.026132405" />
+        <state line="5" column="22" selection-start="136" selection-end="136" vertical-scroll-proportion="0.13066202" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/PlaceNames.java">
+    <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/HelloWorldWind.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="620" selection-end="620" vertical-scroll-proportion="0.0" />
+        <state line="9" column="32" selection-start="261" selection-end="261" vertical-scroll-proportion="0.10452962" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/ApplicationTemplate.java">
+    <entry file="file://$PROJECT_DIR$/src/worldwind/LocationQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="53" selection-start="3044" selection-end="3044" vertical-scroll-proportion="0.31358886" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/GeoJSONLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="13" selection-start="833" selection-end="833" vertical-scroll-proportion="0.28745645" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/worldwind/SimpleWWJ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="24" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0" />
+        <state line="23" column="4" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/worldwind/AppMenuBar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="4" selection-start="1922" selection-end="1922" vertical-scroll-proportion="0.0">
+        <state line="27" column="38" selection-start="872" selection-end="872" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/LayerPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="94" selection-start="2537" selection-end="2537" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/ApplicationTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="214" column="45" selection-start="7753" selection-end="7753" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/GazetteerPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="165" column="0" selection-start="6583" selection-end="6583" vertical-scroll-proportion="0.026132405" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/worldwind/RoutePointEventListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/worldwind/RoutePointPanelLocationSelectedEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="21" selection-start="570" selection-end="570" vertical-scroll-proportion="0.6271777" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/Paths.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="24" selection-start="2173" selection-end="2173" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/worldwind/ZoomFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
+        <state line="52" column="54" selection-start="1657" selection-end="1657" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/worldwind/LocationQuery.java">
+    <entry file="file://$PROJECT_DIR$/src/worldwind/SimpleWWJ.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="47" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
+        <state line="40" column="0" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/worldwind/GlobeView.java">
+    <entry file="file://$PROJECT_DIR$/src/worldwind/RoutePointPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="10" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/Placemarks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="57" selection-start="2402" selection-end="2402" vertical-scroll-proportion="0.6533101">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/GazetteerApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="2" selection-start="623" selection-end="623" vertical-scroll-proportion="0.31358886">
+        <state line="56" column="27" selection-start="1961" selection-end="1961" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/worldwind/RouteFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="22" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
+        <state line="194" column="36" selection-start="7233" selection-end="7233" vertical-scroll-proportion="0.66027874">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#900#917#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gov/nasa/worldwindx/examples/GazetteerPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="20" selection-start="2950" selection-end="2950" vertical-scroll-proportion="0.98275864">
-          <folding />
         </state>
       </provider>
     </entry>

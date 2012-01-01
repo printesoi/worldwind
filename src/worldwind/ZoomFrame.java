@@ -88,8 +88,9 @@ public class ZoomFrame extends JFrame {
         if (lookupString == null || lookupString.length() < 1) {
             return;
         }
-        
-        List<PointOfInterest> poi = locationQuery.queryService(lookupString);
+
+        LocationService locationService = new LocationService();
+        List<PointOfInterest> poi = locationService.queryService(lookupString);
         if (poi == null || poi.size() < 1) {
             throw new LocationNotFoundException();
         }

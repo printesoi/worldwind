@@ -2,7 +2,6 @@ package worldwind;
 
 import gov.nasa.worldwind.BasicModel;
 import gov.nasa.worldwind.awt.WorldWindowGLCanvas;
-import gov.nasa.worldwind.WorldWindow;
 import gov.nasa.worldwind.layers.*;
 
 import javax.swing.*;
@@ -26,22 +25,22 @@ class SimpleWWJ extends JFrame {
         BasicModel model = new BasicModel();
         ww.setModel(model);
 
-        addControlsLayer(ww);
+        addControlsLayer();
         setJMenuBar(new AppMenuBar(this, ww, instance));
 
         getContentPane().add(ww, BorderLayout.CENTER);
         setVisible(true);
     }
 
-    public void addControlsLayer(WorldWindow wwd) {
+    public void addControlsLayer() {
         ViewControlsLayer viewControlsLayer = new ViewControlsLayer();
-        insertBeforeCompass(ww, viewControlsLayer);
+        insertBeforeCompass(viewControlsLayer);
         ww.addSelectListener(new ViewControlsSelectListener(ww, viewControlsLayer));
     }
     
-    public void insertBeforeCompass(WorldWindow wwd, Layer layer) {
+    public void insertBeforeCompass(Layer layer) {
         int index = 0;
-        LayerList layers = wwd.getModel().getLayers();
+        LayerList layers = ww.getModel().getLayers();
         for (Layer l : layers) {
             if (l instanceof CompassLayer) {
                 index = layers.indexOf(l);
